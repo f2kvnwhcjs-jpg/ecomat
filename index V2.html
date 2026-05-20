@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Экомат 3.0 — Платформа управления</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="tb">
+    <div class="tb-logo"><i class="ti ti-box" style="font-size:17px;color:#185FA5"></i>Экомат 3.0</div>
+    <div class="rt" id="rt">
+      <button onclick="sR('vendor')" class="active"><i class="ti ti-building"></i>Vendor (MSKY)</button>
+      <button onclick="sR('dist')"><i class="ti ti-truck"></i>Distributor</button>
+      <button onclick="sR('merch')"><i class="ti ti-shopping-bag"></i>Merchant</button>
+    </div>
+  </div>
+  <div class="layout">
+    <div class="sb" id="sb"></div>
+    <div class="main" id="main"></div>
+  </div>
+  <div class="mo" id="mo" onclick="if(event.target===this)closeM()">
+    <div class="modal" id="mb"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
